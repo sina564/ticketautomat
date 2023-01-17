@@ -1,18 +1,3 @@
-/**
- * Die Klasse Ticketautomat modelliert einfache Ticketautomaten,
- * die Tickets zu einem Einheitspreis herausgeben.
- * Der Preis für die Tickets eines Automaten kann über den Konstruktor
- * festgelegt werden.
- * Ein Ticketautomat ist insofern 'naiv', dass er seinen Benutzern
- * vertraut, dass sie genügend Geld einwerfen, bevor sie sich ein Ticket
- * ausdrucken lassen.
- * Außerdem nimmt er an, dass sinnvolle Beträge eingeworfen werden.
- *
- * @author David J. Barnes und Michael Kölling
- * @version 31.07.2011
- */
-
-
 public class Ticketautomat 
 {
     // Der Preis eines Tickets dieses Automaten.
@@ -25,8 +10,8 @@ public class Ticketautomat
     /**
      * Erzeuge eine Maschine, die TickEts zum angegebenen Preis
      * (in Euro) ausgibt.
-     * Zu beachten: Der Preis muss größer als null sein,
-     * der Automat überprüft dies jedoch nicht.
+     * Zu beachten: Der Preis muss grï¿½ï¿½er als null sein,
+     * der Automat ï¿½berprï¿½ft dies jedoch nicht.
      */
     public Ticketautomat()
     {
@@ -51,7 +36,7 @@ public class Ticketautomat
     }
 
     /**
-     * Liefere die Höhe des Betrags, der für das nächste Ticket bereits
+     * Liefere die Hï¿½he des Betrags, der fï¿½r das nï¿½chste Ticket bereits
      * eingeworfen wurde.
      */
     public double gibBisherGezahltenBetrag()
@@ -60,8 +45,8 @@ public class Ticketautomat
     }
 
     /**
-     * Nimm den angegebenen Betrag als Anzahlung für das
-     * nächste Ticket.
+     * Nimm den angegebenen Betrag als Anzahlung fï¿½r das
+     * nï¿½chste Ticket.
      */
     public void geldEinwerfen(double betrag)
     {
@@ -85,14 +70,14 @@ public class Ticketautomat
             System.out.println("# Die BlueJ-Linie");
             System.out.println("# Ticket :" + aktTicket.getName());
             System.out.println("# Preisstufe :" + aktTicket.getPreisstufe());
-            System.out.println("# " + aktTicket.getPreis() + " €.");
+            System.out.println("# " + aktTicket.getPreis() + " ï¿½.");
             System.out.println("##################");
             System.out.println();
 
             // Die Gesamtsumme mit dem eingezahlten Betrag aktualisieren.
             gesamtsumme = gesamtsumme + bisherGezahlt;
-            // Die bisherige Bezahlung zurücksetzen.
-            String tmp = (bisherGezahlt-aktTicket.getPreis())> 0.0 ? "Rückgeld : " + (bisherGezahlt-aktTicket.getPreis()): "";
+            // Die bisherige Bezahlung zurï¿½cksetzen.
+            String tmp = (bisherGezahlt-aktTicket.getPreis())> 0.0 ? "Rï¿½ckgeld : " + (bisherGezahlt-aktTicket.getPreis()): "";
             System.out.println (tmp);
             bisherGezahlt = 0.00;
         }
@@ -105,7 +90,7 @@ public class Ticketautomat
     
     public void vorgangAbbrechen()
     {
-            String tmp = (bisherGezahlt)> 0.0 ? "Rückgeld : " + String.format("%.2f",bisherGezahlt): "";
+            String tmp = (bisherGezahlt)> 0.0 ? "Rï¿½ckgeld : " + String.format("%.2f",bisherGezahlt): "";
             System.out.println (tmp);
             bisherGezahlt = 0.00;
     }
