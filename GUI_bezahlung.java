@@ -10,10 +10,13 @@ public class GUI_bezahlung{
         ImageIcon fuenfzigcentbild = new ImageIcon("50-cent.png");
         ImageIcon eineurobild = new ImageIcon("1-euro.png");
         ImageIcon zweieurobild = new ImageIcon("2-euro.png");
+        ImageIcon fuenfeurobild = new ImageIcon("5-euro.jpg");
+        ImageIcon zehneurobild = new ImageIcon("10-euro.jpg");
+        ImageIcon zwanzigeurobild = new ImageIcon("20-euro.jpg");
 
         // create variablen fuer dynamische ausgabe
-        double betraggezahlt=0.0;
-        double betragzuzahlen=0.0;
+        double betraggezahlt=0.00;
+        double betragzuzahlen=0.00;
 
         // create buttons
         JButton fuenfc = new JButton (fuenfcentbild);
@@ -22,9 +25,9 @@ public class GUI_bezahlung{
         JButton fuenfzig = new JButton (fuenfzigcentbild);
         JButton eins = new JButton (eineurobild);
         JButton zwei  = new JButton (zweieurobild);
-        JButton fuenf = new JButton ("5,00");
-        JButton zehn = new JButton ("10,00");
-        JButton zwanzig = new JButton ("20,00");
+        JButton fuenf = new JButton (fuenfeurobild);
+        JButton zehn = new JButton (zehneurobild);
+        JButton zwanzig = new JButton (zwanzigeurobild);
 
         // create variable labels fuer dynamische ausgabe
         JLabel gezahlt = new JLabel();

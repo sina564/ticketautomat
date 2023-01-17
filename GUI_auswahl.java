@@ -2,9 +2,7 @@
 //Home Page http://guigenie.cjb.net - Check often for new versions!
 
 import java.awt.*;
-import java.awt.event.*;
 import javax.swing.*;
-import javax.swing.event.*;
 
 public class GUI_auswahl extends JPanel {
     private JButton studi;
@@ -45,6 +43,7 @@ public class GUI_auswahl extends JPanel {
         frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().add (new GUI_auswahl());
         frame.pack();
+        frame.setResizable(false);
         frame.setVisible (true);
     }
 }
