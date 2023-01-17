@@ -1,0 +1,4 @@
+public enum Preisstufe
+{
+    KINDER, STUDIERENDE, ERWACHSENE, RENTNER_INNEN
+}
