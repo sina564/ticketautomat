@@ -1,4 +1,3 @@
-
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -54,24 +53,23 @@ public class GUI_auswahl implements ActionListener {
 
         if (e.getSource()==kind){
             GUI_bezahlung gui_bezahlung = new GUI_bezahlung();
-            tmpzaehler = 0;
+            tmpzaehler = 1;
             frame.dispose();
         } 
         if (e.getSource()==erw){
             GUI_bezahlung gui_bezahlung = new GUI_bezahlung();
-            tmpzaehler = 1;
+            tmpzaehler = 2;
             frame.dispose();
         } 
         if (e.getSource()==studi){
             GUI_bezahlung gui_bezahlung = new GUI_bezahlung();
-            tmpzaehler = 2;
+            tmpzaehler = 3;
             frame.dispose();
         } 
         if (e.getSource()==senior){
             GUI_bezahlung gui_bezahlung = new GUI_bezahlung();
-            tmpzaehler = 3;
+            tmpzaehler = 4;
             frame.dispose();
         } 
     }
-
 }

@@ -6,7 +6,7 @@ import javax.swing.*;
 public class GUI_bezahlung implements ActionListener {
 
     float i;
-    
+
     //init the frame
     JFrame frame = new JFrame ("Zahlung");
 
@@ -40,12 +40,14 @@ public class GUI_bezahlung implements ActionListener {
     JLabel bereitsGezahlt = new JLabel ("bereits gezahlt:");
     JLabel wirdGezahlt = new JLabel ("noch zu zahlen:");
 
+    
     GUI_bezahlung(){
 
         frame.setDefaultCloseOperation (JFrame.EXIT_ON_CLOSE);
         frame.setSize(570, 380);
-        frame.setResizable(false);
+        frame.setResizable(true);
         frame.setVisible (true);
+        frame.setLayout (null);
     
         //add components to output
         frame.add (bereitsGezahlt);
@@ -92,12 +94,12 @@ public class GUI_bezahlung implements ActionListener {
         zwanzig.setBounds (414, 194, 60, 60);
         zwanzig.addActionListener(this);
     }
+
     
     /* 
     // switch tmpzaehler !!!!
     switch (tmpzaehler){
-    case 0:
-        betragzuzahlen=3f;
+    case 1: betragzuzahlen=3f;
         break;
     case 1, 3:
         betragzuzahlen=4f;
