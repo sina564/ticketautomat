@@ -1,10 +1,3 @@
-
-/**
- * Beschreiben Sie hier die Klasse Ticket.
- * 
- * @author (Ihr Name) 
- * @version (eine Versionsnummer oder ein Datum)
- */
 public class Ticket
 {
     private String name;
@@ -47,6 +40,6 @@ public class Ticket
     
     public void setPreis(double neuerPreis)
     {
-        preis=neuerPreis;
+        preis = neuerPreis;
     }
 }
